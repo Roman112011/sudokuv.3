@@ -1,0 +1,31 @@
+table {
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid grey; /* Бордер для маленьких комірок */
+}
+
+/* Виділення великих 3x3 блоків */
+td:nth-child(3n) {
+    border-right: 3px solid black; /* Вертикальні лінії */
+}
+
+tr:nth-child(3n) td {
+    border-bottom: 3px solid black; /* Горизонтальні лінії */
+}
+
+/* Додаткове правило для мобільних пристроїв */
+@media (max-width: 600px) {
+    td {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}

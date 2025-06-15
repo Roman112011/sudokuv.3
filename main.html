@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <h2 id="number">Number:</h2>
+    </header>
+    <table align="center">
+        <tbody>
+            <tr>
+                <td id="cell-1" onclick="full(1)"></td><td id="cell-2" onclick="full(2)"></td><td id="cell-3" onclick="full(3)"></td>
+                <td id="cell-4" onclick="full(4)"></td><td id="cell-5" onclick="full(5)"></td><td id="cell-6" onclick="full(6)"></td>
+                <td id="cell-7" onclick="full(7)"></td><td id="cell-8" onclick="full(8)"></td><td id="cell-9" onclick="full(9)"></td>
+            </tr>
+            <tr>
+                <td id="cell-10" onclick="full(10)"></td><td id="cell-11" onclick="full(11)"></td><td id="cell-12" onclick="full(12)"></td>
+                <td id="cell-13" onclick="full(13)"></td><td id="cell-14" onclick="full(14)"></td><td id="cell-15" onclick="full(15)"></td>
+                <td id="cell-16" onclick="full(16)"></td><td id="cell-17" onclick="full(17)"></td><td id="cell-18" onclick="full(18)"></td>
+            </tr>
+            <tr>
+                <td id="cell-19" onclick="full(19)"></td><td id="cell-20" onclick="full(20)"></td><td id="cell-21" onclick="full(21)"></td>
+                <td id="cell-22" onclick="full(22)"></td><td id="cell-23" onclick="full(23)"></td><td id="cell-24" onclick="full(24)"></td>
+                <td id="cell-25" onclick="full(25)"></td><td id="cell-26" onclick="full(26)"></td><td id="cell-27" onclick="full(27)"></td>
+            </tr>
+            <tr>
+                <td id="cell-28" onclick="full(28)"></td><td id="cell-29" onclick="full(29)"></td><td id="cell-30" onclick="full(30)"></td>
+                <td id="cell-31" onclick="full(31)"></td><td id="cell-32" onclick="full(32)"></td><td id="cell-33" onclick="full(33)"></td>
+                <td id="cell-34" onclick="full(34)"></td><td id="cell-35" onclick="full(35)"></td><td id="cell-36" onclick="full(36)"></td>
+            </tr>
+            <tr>
+                <td id="cell-37" onclick="full(37)"></td><td id="cell-38" onclick="full(38)"></td><td id="cell-39" onclick="full(39)"></td>
+                <td id="cell-40" onclick="full(40)"></td><td id="cell-41" onclick="full(41)"></td><td id="cell-42" onclick="full(42)"></td>
+                <td id="cell-43" onclick="full(43)"></td><td id="cell-44" onclick="full(44)"></td><td id="cell-45" onclick="full(45)"></td>
+            </tr>
+            <tr>
+                <td id="cell-46" onclick="full(46)"></td><td id="cell-47" onclick="full(47)"></td><td id="cell-48" onclick="full(48)"></td>
+                <td id="cell-49" onclick="full(49)"></td><td id="cell-50" onclick="full(50)"></td><td id="cell-51" onclick="full(51)"></td>
+                <td id="cell-52" onclick="full(52)"></td><td id="cell-53" onclick="full(53)"></td><td id="cell-54" onclick="full(54)"></td>
+            </tr>
+            <tr>
+                <td id="cell-55" onclick="full(55)"></td><td id="cell-56" onclick="full(56)"></td><td id="cell-57" onclick="full(57)"></td>
+                <td id="cell-58" onclick="full(58)"></td><td id="cell-59" onclick="full(59)"></td><td id="cell-60" onclick="full(60)"></td>
+                <td id="cell-61" onclick="full(61)"></td><td id="cell-62" onclick="full(62)"></td><td id="cell-63" onclick="full(63)"></td>
+            </tr>
+            <tr>
+                <td id="cell-64" onclick="full(64)"></td><td id="cell-65" onclick="full(65)"></td><td id="cell-66" onclick="full(66)"></td>
+                <td id="cell-67" onclick="full(67)"></td><td id="cell-68" onclick="full(68)"></td><td id="cell-69" onclick="full(69)"></td>
+                <td id="cell-70" onclick="full(70)"></td><td id="cell-71" onclick="full(71)"></td><td id="cell-72" onclick="full(72)"></td>
+            </tr>
+            <tr>
+                <td id="cell-73" onclick="full(73)"></td><td id="cell-74" onclick="full(74)"></td><td id="cell-75" onclick="full(75)"></td>
+                <td id="cell-76" onclick="full(76)"></td><td id="cell-77" onclick="full(77)"></td><td id="cell-78" onclick="full(78)"></td>
+                <td id="cell-79" onclick="full(79)"></td><td id="cell-80" onclick="full(80)"></td><td id="cell-81" onclick="full(81)"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div align="center">
+
+        <button onclick="number(1)">1</button>
+        <button onclick="number(2)">2</button>
+        <button onclick="number(3)">3</button>
+        <button onclick="number(4)">4</button>
+        <button onclick="number(5)">5</button>
+        <button onclick="number(6)">6</button>
+        <button onclick="number(7)">7</button>
+        <button onclick="number(8)">8</button>
+        <button onclick="number(9)">9</button>
+        <button onclick="number(null)">null</button>
+    </div>
+
+     <div align="center">
+
+        <button onclick="diff(20)">20</button>
+        <button onclick="diff(25)">25</button>
+        <button onclick="diff(30)">30</button>
+        <button onclick="diff(35)">35</button><br><br>
+        <button onclick="diff(40)">40</button>
+        <button onclick="diff(50)">50</button>
+        <button onclick="diff(55)">55</button>
+        <button onclick="diff(59)">59</button>
+        <button onclick="diff(60)">60</button>
+    </div>
+
+    <script src="jsS/main.js"></script>
+</body>
+</html>
